@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
-:root {
-    --color-primary: #FFC500;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16 px;
-}
 
 * {
     box-sizing: border-box;
 }
+
+:root {
+    --color-primary: #FFC500;
+    --default-padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16 px;
+
+}
+
 body {
     margin: 0;
     padding-top: 7.75rem;
@@ -30,10 +34,9 @@ ul {
     left: 0;
     width: 100vw;
     height: 7.75rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
     background-color: #000;
     color: #FFF;
-    text-transform: uppercase;
 }
 
 .navbar__links {
@@ -43,6 +46,7 @@ ul {
 .navbar__links li {
     font-size: 0.875rem;
     margin-right: 3rem;
+    text-transform: uppercase;
 }
 
 .navbar__links a {
@@ -59,6 +63,7 @@ ul {
     font-size: 2.375rem;
     font-weight: 900;
     line-height: 1ch;
+    text-transform: uppercase;
     text-align: right;
 }
 
@@ -81,10 +86,6 @@ ul {
     height: calc(100vh - 7.75rem);
 }
 
-.slide h6{
-    margin: 0;
-}
-
 .slide__background-image {
     width: 100%;
     height: 100%;
@@ -95,7 +96,7 @@ ul {
 .slide__copy {
     position: absolute;
     left: 50vw;
-    top: 6.25rem;
+    top: 1rem;
 }
 
 .slide__copy h6 {
@@ -108,7 +109,7 @@ ul {
 .slide__copy h2 {
     font-size: 6.25rem;
     text-transform: uppercase;
-    line-height: 5rem;
+    line-height: 6.25rem;
 }
 
 .slide__copy h2 span {
