@@ -134,3 +134,24 @@ ul {
     background-color: var(--color-primary);
     color: #000;
 }
+
+#counter {
+    background-color: var(--color-primary);
+    color:#FFF;
+    text-transform: uppercase;
+
+}
+
+.counter__container {
+    margin: 0;
+    padding: 4.375rem 1rem;
+}
+
+.counter__container h3{
+    font-size: 2.1875rem;
+}
+
+.counter__container h3 small{
+    display: block;
+    font-size: 1.25rem;
+}
