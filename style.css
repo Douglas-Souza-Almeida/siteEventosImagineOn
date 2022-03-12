@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -7,9 +6,10 @@
 :root {
     --color-primary: #FFC500;
     --default-padding: 1rem;
+    --color-copy: #333;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16 px;
-    color: #333;
+    font-size: 16px;
+    color: var(--color-copy);
 }
 
 body {
@@ -22,27 +22,35 @@ header, main, footer {
     overflow-x: hidden;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 ul {
     display: flex;
     list-style: none;
     padding-left: 0;
 }
 
-
 .navbar {
-    position: fixed;
+    position: absolute;
     z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+
+}
+
+.navbar__container {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 7.75rem;
     padding: 0 2rem;
-    background-color: #000;
-    color: #FFF;
-}
+    }
 
 .navbar__links {
     justify-self: end;
@@ -88,7 +96,7 @@ ul {
 
 .slide {
     position: relative;
-    height: calc(100vh - 7.75rem);
+    height: calc(90vh - 7.75rem);
 }
 
 .slide__background-image {
@@ -101,7 +109,7 @@ ul {
 .slide__copy {
     position: absolute;
     left: 50vw;
-    top: 1rem;
+    top: 6.25rem;
 }
 
 .slide__copy h6 {
@@ -112,9 +120,9 @@ ul {
 }
 
 .slide__copy h2 {
-    font-size: 6.25rem;
+    font-size: 3.25rem;
     text-transform: uppercase;
-    line-height: 6.25rem;
+    line-height: 3.25rem;
 }
 
 .slide__copy h2 span {
@@ -134,7 +142,7 @@ ul {
     transition: 0.5s all ease;
 }
 
-.btn:hover, .btn:active, .btn:focus {
+.btn:hover, .btn:active, .btn:focus, .btn--institutional {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
     color: #000;
@@ -149,9 +157,8 @@ ul {
 
 .counter__container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     place-items: center;
-    margin: 0;
     padding: 4.375rem 1rem;
 }
 
@@ -172,6 +179,10 @@ ul {
     padding: 4.375rem;
 }
 
+.institutional__img {
+    max-width: 550px;
+}
+
 .institutional__copy {
     padding: 0 1.875rem;
 }
@@ -190,6 +201,16 @@ ul {
 }
 
 .institutional p {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.0625rem;
     line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.btn--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
+    box-shadow: 0 1rem 1rem #0006;
+
 }
