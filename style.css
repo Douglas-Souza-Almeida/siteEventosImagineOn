@@ -143,6 +143,9 @@ ul {
 }
 
 .counter__container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    place-items: center;
     margin: 0;
     padding: 4.375rem 1rem;
 }
