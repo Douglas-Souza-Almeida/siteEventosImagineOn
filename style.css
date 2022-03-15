@@ -17,7 +17,6 @@ body {
     padding-top: 7.75rem;
 }
 
-
 header, main, footer {
     overflow-x: hidden;
 }
@@ -97,7 +96,7 @@ ul {
 
 .slide {
     position: relative;
-    height: calc(90vh - 7.75rem);
+    height: 90vh;
 }
 
 .slide__background-image {
@@ -113,6 +112,7 @@ ul {
     top: 5rem;
 }
 
+
 .slide__copy h6 {
     font-size: 0.9375rem;
     font-weight: 400;
@@ -125,8 +125,10 @@ ul {
     font-size: 6.25rem;
     text-transform: uppercase;
     line-height: 6.25rem;
-    margin: 0;
-    padding: 3rem 0;
+    
+    /*incluído para ajuste - revisar */
+        margin: 0;
+        padding: 3rem 0;
 }
 
 .slide__copy h2 span {
@@ -216,5 +218,53 @@ ul {
     color: var(--color-copy);
     background: unset;
     box-shadow: 0 1rem 1rem #0006;
+}
+
+.quote {
+    background-image: url(./img/parallax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+}
+
+.quote__copy {
+    background-color: #fff;
+    padding: 5.3125rem 4.0625rem;
+}
+
+.quote__copy h6 {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    letter-spacing: 0.1875rem;
+    line-height: 1.4375rem;
+    max-width: 53ch;
+    text-transform: uppercase;
+    margin: 1.875rem 0;
+}
+
+.quote__copy h2 {
+    font-size: 5rem;
+    line-height: ;
+    text-transform: uppercase;
+    letter-spacing: -0.1875rem;
+    margin-top: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+    display: block;
+}
+
+.btn--quote {
+    color: var(--color-copy);
+    border-color: var(--color-copy);
+    background: unset;
 
 }
